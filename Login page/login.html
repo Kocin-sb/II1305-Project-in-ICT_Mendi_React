@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Login Mendi</title>
+</head>
+<body> 
+<div class="navigator">
+    <ul class="navigator">
+      <li class="navigator"><a class="active" href="https://www.mendi.io"><img class="logo" src="img/mendi_logo.png" alt="Logo not foun" /></a></li>
+     </ul>
+</div>
+<div id="innerphoto">
+    <div class="picture"><img class="picture" src= "./img/image_28.png" /></div>
+    <div login="login">
+        <p style="align-content: center;"> Login information:</p>
+        <p style="align-content: center;"> Press this button for login</p>
+        <button style="align-content: center;" 
+            onclick="document.getElementById('form_pop').style.display='block'" 
+            style="width:auto;">Login</button>
+    </div>
+
+    
+<div id="loginsite">
+        <div class="imgcontainer">
+              <img src="./img/mendiologo.jpg" alt="Avatar"  width="150px" height="auto">
+            </div>       
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('form_pop').style.display='none'" 
+                class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </div>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('form_pop');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
